@@ -1,1 +1,43 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --backgroung-img: repeating-linear-gradient(
+      -90deg,
+      transparent,
+      transparent 2px,
+      #d3d3d3 2px,
+      #d3d3d3 4px
+    ),
+    repeating-linear-gradient(
+      transparent,
+      transparent 2px,
+      #d3d3d3 2px,
+      #d3d3d3 4px
+    ),
+    linear-gradient(#e7e7e7, #1a1a1a);
+  --backup-background: #fff;
+  --border-color: #000;
+  --main-font: Inter-Variable;
+  --accent-font: PressStart2P;
+  --main-wght: 400;
+  --accent-wght: 700;
+  --main-font-size: 18px;
+  --main-text-color: #000;
+  --main-font-style: normal;
+  --main-line-height: 21px;
+  --attractive-text-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --header-line-height: normal;
+  --button-font-size: 14px;
+  --subtitle-font-style: normal;
+  --subtitle-line-height: normal;
+  --lable-font-size: 14px;
+  --card-button-text-color: #fff;
+  --button-cover-color: #000;
+  --contour-color: #000;
+  --sparks-color: #FF0000;
+  --main-body-color-hover: #000;
+  --core-color-hover: #000;
+  --main-body-color-active: #FF0000;
+  --core-color-active: #FF0000;
+  --contour-color-active: #FF0000;
+}

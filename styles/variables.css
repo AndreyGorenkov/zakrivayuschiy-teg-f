@@ -1,5 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
+  --content-width: clamp(375px, 50%, 700px);
+  --header-height: clamp(327px, 30vw, 368px);
   --backgroung-img: repeating-linear-gradient(
       -90deg,
       transparent,

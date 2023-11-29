@@ -68,7 +68,7 @@
 }
 
 .theme-menu__item:not(:last-child) {
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .theme-menu__button {
@@ -191,7 +191,8 @@
 .card__button-container {
   display: flex;
   align-self: end;
-  padding: 0 18px 22px;
+  gap: 3px;
+  padding: 0px 25px 24px;
 }
 
 .like-icon {
@@ -218,7 +219,6 @@
 
 .button__text {
   position: relative;
-  border: 2px solid var(--border-color, #00cc14);
   font-family: var(--accent-font, Arial, Helvetica, sans-serif);
   font-size: var(--button-font-size, 14px);
 }
@@ -227,16 +227,23 @@
   outline: none;
 }
 
-.main__button:focus-visible .button__text {
+.main__button:focus-visible {
   box-shadow: 2px 2px currentColor;
   transition: box-shadow 0.3s ease;
 }
 
-.button__text:hover {
+.main__button {
+  position: relative;
+  border: 2px solid var(--border-color, #00cc14);
+  min-width: 130px;
+  min-height: 38px;
+}
+
+.main__button:hover {
   cursor: pointer;
 }
 
-.button__text::after {
+.main__button::after {
   content: "";
   position: absolute;
   top: 0;
@@ -249,9 +256,7 @@
   transform-origin: left; 
 }
 
-/* Эти стили и так прописаны для одной общей сущности .button__text. Они применяются ко всем кнопкам в <main> */
-
-.button__text:hover::after {
+.main__button:hover::after {
   transform: scaleX(1);
 }
 
@@ -259,9 +264,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
-  min-width: 130px;
-  min-height: 38px;
 }
 
 .footer {
@@ -278,6 +280,9 @@
 .footer__button {
   display: flex;
   gap: 9px;
+}
+
+.footer__icon-button {
   padding: 15px 20px;
   background-color: var(--backup-background, #fff);
 }

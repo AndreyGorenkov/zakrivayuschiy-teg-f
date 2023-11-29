@@ -332,10 +332,21 @@
 .close-button {
   align-self: center;
   width: 100%;
-  min-height: 38px; /* https://disk.yandex.ru/i/uDscg9j3hvm4wQ  В чём прикол?)*/
+  min-height: 38px;
   border: 2px solid var(--border-color, #000);
   text-transform: inherit;
 }
+
+.close-button:focus {
+  outline: none;
+}
+
+.close-button:focus-visible {
+  box-shadow: 2px 2px currentColor;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Сделал отдельной сущьностью, потому что у меня много вложенностей. Чтобы сделать всё одной сущьностью надо будет сильно переделывать код. Я пытался сделать дополнительный span, как у других кнопок, но в форме он почему-то всё ломает окончательно. */
 
 .filter-sepia {
   filter: sepia(105%);
